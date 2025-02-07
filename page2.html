@@ -33,6 +33,22 @@
             margin-top: 20px;
             width: 500px; /* يمكنك تعديل الحجم */
         }
+        .back-button {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            background-color: #c2c9d1;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+        .back-button:hover {
+            background-color: #c2c9d1;
+        }
     </style>
 </head>
 <body>
@@ -55,6 +71,13 @@
         <img class="poem-image" src="WjsMP5GaLa2fYDqF5aFU1wC87yacIGKMz2lxtAId.jpg" alt="علم السعودية">
         
     </div>
+    <button class="back-button" onclick="goToPage()">🔙 رجوع</button>
 
+    <script>
+        function goToPage() {
+    
+           window.location.href = "index.html";
+        }
+   </script>
 </body>
 </html>

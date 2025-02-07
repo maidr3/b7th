@@ -12,6 +12,22 @@
             width: 450px; /* التحكم في حجمها */
             height: auto; 
         }
+        .back-button {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            background-color: #c2c9d1;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+        .back-button:hover {
+            background-color: #c2c9d1;
+        }
     </style>
 </head>
 <body>
@@ -26,5 +42,13 @@
     <div>
         <img class="small-image" src="ajel_2022-02_963be61e-38b7-4507-a94a-f134add76461_uuuuuuuuuuu.avif" alt="صورة">
     </div>
+    <button class="back-button" onclick="goToPage()">🔙 رجوع</button>
+
+    <script>
+        function goToPage() {
+    
+           window.location.href = "index.html";
+        }
+   </script>
 </body>
 </html>

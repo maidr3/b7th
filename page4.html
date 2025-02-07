@@ -45,6 +45,22 @@
             font-weight: bold;
             line-height: 2; /* تحسين المسافات بين الأسطر */
         }
+        .back-button {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            background-color: #c2c9d1;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+        .back-button:hover {
+            background-color: #c2c9d1;
+        }
     </style>
 </head>
 <body>
@@ -55,5 +71,13 @@
     </div>
 
     <img src="لقطة شاشة 2025-02-07 044657.png" alt="علامة مائية" class="watermark">
+    <button class="back-button" onclick="goToPage()">🔙 رجوع</button>
+
+    <script>
+        function goToPage() {
+    
+           window.location.href = "index.html";
+        }
+   </script>
 </body>
 </html>
