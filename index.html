@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>قوائم متعددة</title>
+    <title>الصفحة الرئيسة</title>
     <style>
         /* تصميم الشريط العلوي */
         .navbar { 
@@ -67,9 +67,6 @@
             height: auto;
             margin-top: 20px;
         }
-        h1 {
-            color: rgb(223, 216, 216);
-        }
         .small-image {
             position: absolute;
             top: 60px; /* المسافة أسفل الشريط */
@@ -77,7 +74,49 @@
             width: 80px; /* التحكم في حجمها */
             height: auto; 
         }
-        
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+        .box {
+            width: 90%;
+            max-width: 400px;
+            padding: 20px;
+            margin: 10px;
+            background: #3498db;
+            color: white;
+            border-radius: 10px;
+        }
+        /* تحسين العرض على الشاشات الكبيرة */
+        @media (min-width: 768px) {
+            .container {
+                flex-direction: row;
+                justify-content: center;
+            }
+        }
+        }
+        .header-bar h1 {
+            color: white; /* لون النص */
+            font-size: 80px; /* حجم الخط */
+            margin: 0;
+        }
+
+        .content {
+            margin-top: 60px; /* إزاحة المحتوى لأسفل حتى لا يختفي تحت الشريط */
+            text-align: center;
+            padding: 20px;
+        }
     </style>
 </head>
 <body>
@@ -97,7 +136,13 @@
     </div>
     <!-- المحتوى الرئيسي -->
     <div class="content">
-        <h1>ثـانـويـة الأميـر سـعد بـن عبـدالعـزيز</h1>
+ ثـانـويـة الأميـر سـعد بـن عبـدالعـزيز
+        <div class="header-bar">
+            <h1>
+ ثـانـويـة الأميـر سـعد بـن عبـدالعـزيز
+            </h1>
+        </div>
+    
         <img src="photo_٢٠٢٥-٠٢-٠٧_٠٢-١٩-١٩.jpg" alt="صورة">
         <img class="small-image" src="photo_٢٠٢٥-٠٢-٠٧_٠٣-٥١-٣٣.jpg" alt="صورة">
     </div>
