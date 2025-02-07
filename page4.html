@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>بواسطة</title>
+    <style>
+        body {
+            background-color: rgb(253, 220, 176);
+            height: 100vh;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        .watermark {
+            position: fixed; /* يظل في نفس المكان عند التمرير */
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            opacity: 0.1; /* الشفافية */
+            pointer-events: none; /* يمنع التفاعل مع الصورة */
+            user-select: none; /* يمنع التحديد */
+            z-index: 9999;
+            width: 300px; /* عرض الصورة */
+            height: auto; /* الارتفاع تلقائي */
+        }
+        body {
+            background-color: #f8d7a2; /* لون الخلفية مشابه للصورة */
+            font-family: Arial, sans-serif;
+            direction: rtl; /* يجعل النص يبدأ من اليمين */
+            margin: 0;
+            padding: 0;
+        }
+
+        .text-container {
+            position: fixed; /* يجعل النص ثابتًا حتى عند التمرير */
+            right: 20px; /* يضع النص في أقصى اليمين */
+            top: 50%; /* يوسّطه عموديًا */
+            transform: translateY(-50%);
+            text-align: right; /* محاذاة النص لليمين */
+            font-size: 22px;
+            font-weight: bold;
+            line-height: 2; /* تحسين المسافات بين الأسطر */
+        }
+    </style>
+</head>
+<body>
+    <div class="text-container">
+        <p><strong>🔹 عمل الطالب:</strong> سامر حسين الذروي</p>
+        <p><strong>🔹 مدير المدرسة:</strong> عبدالله محمد الشديدي</p>
+        <p><strong>🔹 رائد النشاط:</strong> طاهر عيسى كريري</p>
+    </div>
+
+    <img src="لقطة شاشة 2025-02-07 044657.png" alt="علامة مائية" class="watermark">
+</body>
+</html>
